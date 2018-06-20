@@ -37,4 +37,4 @@ def least_coins(cents)
 
 end
 
-puts least_coins(22)
+puts least_coins(23)
