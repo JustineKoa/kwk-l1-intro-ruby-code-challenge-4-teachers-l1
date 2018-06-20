@@ -2,6 +2,7 @@
 
 def least_coins(cents)
   answer = {:quarters => 0, :dimes => 0, :nickels => 0, :pennies => 0}
+
   if cents % 25 == 0
     answer[:quarters] = cents/25
     return answer
@@ -37,4 +38,3 @@ def least_coins(cents)
 
 end
 
-puts least_coins(31)
