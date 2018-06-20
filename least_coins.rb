@@ -10,6 +10,7 @@ def least_coins(cents)
     num_quarters = (answer / 25).to_i
     answer[:quarters] = num_quarters
     cents = remainder
+  end
 
   if cents % 10 == 0
     answer[:dimes] = cents/10
@@ -19,6 +20,7 @@ def least_coins(cents)
     num_dimes = (answer/10).to_i
     answer[:dimes] = num_dimes
     cents = remainder
+  end
 
   if cents % 5 == 0
     answer[:nickels] = cents/5
@@ -28,6 +30,7 @@ def least_coins(cents)
     num_nickels = (answer/5).to_i
     answer[:nickels] = num_nickels
     cents = remainder
+  end
 
   answer[:pennies] = cents
   return answer
