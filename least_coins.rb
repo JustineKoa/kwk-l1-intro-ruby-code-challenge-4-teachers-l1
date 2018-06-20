@@ -27,7 +27,7 @@ def least_coins(cents)
     return answer
   else
     remainer = cents % 5
-    puts cents
+    puts cents % 5
     puts remainder
     num_nickels = (cents/5).to_i
     answer[:nickels] = num_nickels
