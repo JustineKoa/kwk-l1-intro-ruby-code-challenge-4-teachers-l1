@@ -37,4 +37,3 @@ def least_coins(cents)
   return answer
 
 end
-
